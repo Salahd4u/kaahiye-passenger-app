@@ -1,25 +1,41 @@
 {
   "expo": {
-    "name": "kaahiye-app",
-    "slug": "kaahiye-app",
+    "name": "Kaahiye",
+    "slug": "kaahiye-passenger-app",
     "version": "1.0.0",
+    "scheme": "kaahiye",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.salahd4u.kaahiye-app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "73e3dbfc-79c0-4daf-ab1d-524fc53cdb6a"
+      }
+    },
+    "owner": "salahd4u",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/73e3dbfc-79c0-4daf-ab1d-524fc53cdb6a"
     }
   }
 }
